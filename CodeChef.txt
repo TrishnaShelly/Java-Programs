@@ -1,14 +1,23 @@
-Problem
-Chef has a rectangular plate of length N cmNcm and width M cmMcm. He wants to make a wireframe around the plate. The wireframe costs XX rupees per cm.
+/* package codechef; // don't place package name! */
 
-Determine the cost Chef needs to incur to buy the wireframe.
+import java.util.*;
+import java.lang.*;
+import java.io.*;
 
-Input Format
-First line will contain TT, the number of test cases. Then the test cases follow.
-Each test case consists of a single line of input, containing three space-separated integers N,M,N,M, and XX — the length of the plate, width of the plate, and the cost of frame per cm.
-Output Format
-For each test case, output in a single line, the price Chef needs to pay for the wireframe.
-
-Constraints
-1 \leq T \leq 10001≤T≤1000
-1 \leq N,M,X \leq 10001≤N,M,X≤1000
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    Scanner sc= new Scanner( System.in );
+	    int t= sc.nextInt();
+	    for ( int i=0; i<t; i++ ){
+	        int w = sc.nextInt();
+	        int x = sc.nextInt();
+	        int y  =sc.nextInt();
+	        int z = sc.nextInt();
+	        System.out.println( w+x-y*z );
+	    }
+		// your code goes here
+	}
+}
